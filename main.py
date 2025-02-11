@@ -1,5 +1,4 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from urllib.parse import parse_qs
 from cgi import parse_header, parse_multipart
 import html 
 
@@ -34,19 +33,6 @@ class handler(BaseHTTPRequestHandler):
                 output_file.write(postvars['formFile'][0])
 
         self.header()
-        # self.send_response(200)
-        # self.send_header('Content-type', 'text/html')
-        # self.end_headers()
-
-
-
-        # file_length = int(self.headers['Content-Length'])
-        # data = self.rfile.read(file_length)
-        
-        # self.send_response(201, 'Created')
-        # self.end_headers()
-        # reply_body = 'Zapisane'
-        # self.wfile.write(reply_body.encode('utf-8'))
 
 with HTTPServer(('', 80), handler) as server:
     server.serve_forever()
