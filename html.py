@@ -8,7 +8,7 @@ def htmlHead():
         f'<link href="https://cdn.jsdelivr.net/npm/bootstrap-utilities@4.1.3/bootstrap-utilities.min.css" rel="stylesheet">'
         f'<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>'
         f'<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/umd/util.js"></script>'        
-        f'<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Karuzela</title></head><body style="background-color:black; height: 100%; display: grid; place-items: center;">'
+        f'<!DOCTYPE html><html><head><meta http-equiv="refresh" content="3600" ><meta charset="UTF-8"><title>Karuzela</title></head><body style="background-color:black; height: 100%; display: grid; place-items: center;">'
     )
     return head
 
