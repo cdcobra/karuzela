@@ -62,8 +62,8 @@ def htmlCenowka(poz, active):
         f'<hr><hr><hr><hr><hr><hr><hr><hr>'
         f'<h1 style="color: white; font-size: 80;">{poz["produkt"]}</h>'
         f'<hr><hr><hr><hr><hr><hr><hr><hr>'
-        f'<h1 style="color: red; font-size: 80; font-weight: bold;">{poz["cena_netto"]}zł/{poz["jm"]} netto</h>'
-        f'<h1 style="color: green; font-size: 50;">{poz["cena_brutto"]}zł/{poz["jm"]} brutto</h>'
+        f'<h1 style="color: red; font-size: 80; font-weight: bold;"><u>{poz["cena_netto"]:.2f} zł/{poz["jm"].lower()} netto</u></h>'
+        f'<h1 style="color: green; font-size: 50;">{poz["cena_brutto"]:.2f} zł/{poz["jm"].lower()} brutto</h>'
         f'</div>'
     )
     return cenowka
