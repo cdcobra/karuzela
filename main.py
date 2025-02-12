@@ -1,6 +1,13 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from cgi import parse_header, parse_multipart
 import html 
+import os
+
+if not os.path.isfile('promocje.xlsx'):
+    if os.name=='nt':
+        os.popen('copy default.xlsx promocje.xlsx')
+    else:
+        os.popen('cp default.xlsx promocje.xlsx')
 
 class handler(BaseHTTPRequestHandler):
     def header(self):
