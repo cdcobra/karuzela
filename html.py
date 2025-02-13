@@ -36,7 +36,7 @@ def htmlOptions():
 def htmlCarousel():    
     carousel = (
         f'<div class="container-fluid">'
-        f'<div id="carouselContent" class="carousel slide" data-ride="carousel">'
+        f'<div id="carouselContent" class="carousel slide" data-ride="carousel" data-pause="false">'
         f'<div class="carousel-inner" role="listbox">'
         f'{cenowki()}'
         f'<a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a>'
