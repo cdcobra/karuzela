@@ -57,13 +57,13 @@ def cenowki():
 def htmlCenowka(poz, active):
     cenowka = (        
         f'<div class="carousel-item {active} text-center p-4">'
-        f'<h1 style="color: grey; font-size: 50; font-weight: bold;">{poz["h1"]}</h>'
-        f'<h1 style="color: grey; font-size: 30; font-weight: bold;">{poz["h2"]}</h>'
+        f'<h1 style="color: grey; font-size: 80; font-weight: bold;">{poz["h1"]}</h>'
+        f'<h1 style="color: grey; font-size: 50; font-weight: bold;">{poz["h2"]}</h>'
         f'<hr><hr><hr><hr><hr><hr><hr><hr>'
-        f'<h1 style="color: white; font-size: 80;">{poz["produkt"]}</h>'
+        f'<h1 style="color: white; font-size: 120;">{poz["produkt"]}</h>'
         f'<hr><hr><hr><hr><hr><hr><hr><hr>'
-        f'<h1 style="color: red; font-size: 80; font-weight: bold;"><u>{poz["cena_netto"]:.2f} zł/{poz["jm"].lower()} netto</u></h>'
-        f'<h1 style="color: green; font-size: 50;">{poz["cena_brutto"]:.2f} zł/{poz["jm"].lower()} brutto</h>'
+        f'<h1 style="color: red; font-size: 120; font-weight: bold;"><u>{poz["cena_netto"]:.2f} zł/{poz["jm"].lower()} netto</u></h>'
+        f'<h1 style="color: green; font-size: 80;">{poz["cena_brutto"]:.2f} zł/{poz["jm"].lower()} brutto</h>'
         f'</div>'
     )
     return cenowka
